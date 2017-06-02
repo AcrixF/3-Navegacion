@@ -1,0 +1,39 @@
+<!--
+  Generated template for the PrincipalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Principal Root</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Root</h1>
+
+  <!-- Este codigo permite navegar a una pagina a través de codigo Angular-->
+  <button ion-button
+          color="dark"
+          block
+          (click)="navegarPagina()"
+  >
+    Ir a pagina 2
+  </button>
+
+  <!-- Este codigo permite navegar a una pagina a través de ccodigo HTML-->
+  <button ion-button
+          color="danger"
+          block
+         [navPush]="pagina2"
+  >
+    Ir a pagina 2 HTML
+  </button>
+
+
+
+</ion-content>
