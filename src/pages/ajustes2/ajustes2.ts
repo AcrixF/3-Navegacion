@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController , NavController } from 'ionic-angular';
 
 /**
  * Generated class for the Ajustes2Page page.
@@ -13,11 +14,12 @@ import { Component } from '@angular/core';
 })
 export class Ajustes2Page {
 
-  public constructor() {
+  public constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
   }
 
   public ionViewDidLoad() {
     console.log('ionViewDidLoad Ajustes2Page');
   }
+
 
 }

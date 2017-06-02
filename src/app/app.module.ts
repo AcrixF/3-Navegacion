@@ -21,7 +21,9 @@ import { PrincipalPage, AjustesPage, Ajustes2Page, ModalPage, Pagina2Page, Pagin
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      backButtonText:'Atras'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

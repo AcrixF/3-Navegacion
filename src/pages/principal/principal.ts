@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from "ionic-angular";
+import { NavController, MenuController } from "ionic-angular";
 import { Pagina2Page } from "../pagina2/pagina2";
 
 /**
@@ -17,7 +17,7 @@ export class PrincipalPage {
 
   public pagina2: any = Pagina2Page;
 
-  public constructor(public navCrtl: NavController ) {
+  public constructor(public navCrtl: NavController, private menuCtrl: MenuController ) {
   }
 
   public ionViewDidLoad() {
@@ -27,6 +27,11 @@ export class PrincipalPage {
 
   public navegarPagina(){
     this.navCrtl.push( Pagina2Page );
+  }
+
+  public mostrarMenu(){
+    //Muestra el menu
+    this.menuCtrl.toggle();
   }
 
 }

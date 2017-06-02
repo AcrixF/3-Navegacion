@@ -39,7 +39,8 @@ export class AjustesPage {
     //La funcion onDidmiss permite cerrar el modal tambien puede cachar los parametros que se envian de regreso
     modal.onDidDismiss( parametros => {
       if( parametros) {
-        console.log('Parametros: ' + parametros);
+        console.log('Parametros: ');
+        console.log( parametros );
       }else{
         console.log('Se cerro sin parametros.');
       }

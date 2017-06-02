@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {NavController} from "ionic-angular";
-import {Pagina3Page} from "../pagina3/pagina3";
+import { NavController } from "ionic-angular";
+import { Pagina3Page } from "../pagina3/pagina3";
 /**
  * Generated class for the Pagina2Page page.
  *
@@ -41,7 +41,8 @@ export class Pagina2Page {
   }
 
   public irPagina3( mutante: any){
-    console.log( mutante );
+    //Se debe importar la libreria ModalController para poder añadir una nueva pagina al stack de paginas con el metodo push
+    //adicionalmente se pueden agregar parametros a la siguiente página.
     this.navCtrl.push( Pagina3Page, { 'mutante': mutante} );
   }
 

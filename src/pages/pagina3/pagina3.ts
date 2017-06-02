@@ -17,9 +17,8 @@ export class Pagina3Page {
   public mutante: any = {};
 
   public constructor(private navParams: NavParams, private navController:NavController) {
-
-    console.log( navParams );
-
+    //La librerio NavController permite obtener los parametros que son enviados de la pagina anterior, se debe relizar una validacion
+    //para que podamos determinar si esta trae o no los parametros.
     this.mutante = navParams.get('mutante');
 
   }
@@ -29,11 +28,13 @@ export class Pagina3Page {
   }
 
   public irAtras() {
+    //Al importar la libreria NavController, podemos utilizar el método pop() para regresar a la página anterior,
     this.navController.pop();
   }
 
 
   public irRoot(){
+    //De igual forma la librerio NavController permite al usuario regresar hasta la pagina del root con el método popToRoot()
     this.navController.popToRoot();
   }
 
